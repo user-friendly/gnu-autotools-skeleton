@@ -35,10 +35,12 @@ libtool and a compatible compiler (GCC, Clang, etc.).
 
 ## INSTALL
 
-Run `autoreconf --force --install` (or `autoreconf -fi`).
-
-You can use the `-v` option for to get more runtime information out of
-autoreconf. You should get used to executing `autoreconf -vfi` often in the early
-setup stages - especially when m4 macros are changed (more on that later).
-
-See [GNU Autoconf: Autoreconf Invocation](https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.70/html_node/autoreconf-Invocation.html)
+* Run `autoreconf --force --install` (or `autoreconf -fi`).<br />
+    You can use the `-v` option for to get more runtime information out of
+    autoreconf. You should get used to executing `autoreconf -vfi` often in the early
+    setup stages - especially when m4 macros are changed (more on that later).<br /><br />
+    See [GNU Autoconf: Autoreconf Invocation](https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.70/html_node/autoreconf-Invocation.html)
+* Get an error for missing description files.
+    * Create empty files via `touch NEWS README AUTHORS ChangeLog`.
+* Repeate previous `autoreconf` command (with the above arguments).
+    

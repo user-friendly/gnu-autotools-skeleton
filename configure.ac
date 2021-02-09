@@ -7,8 +7,6 @@ AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([config.h])
 
-
-
 # Checks for programs.
 AC_PROG_CXX
 
