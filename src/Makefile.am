@@ -1,3 +1,2 @@
-
-bin_PROGRAMS = gnunoob
-gnunoob_SOURCES = main.cpp
+bin_PROGRAMS = example
+example_SOURCES = main.cpp

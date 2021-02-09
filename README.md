@@ -4,37 +4,36 @@ A guide for absolute newbies to the GNU auto tools project setup.
 
 # QUICK START
 
-REQUIREMENTS
-------------
+## REQUIREMENTS
 
 A GNU/Linux distribution with the GNU autotools setup - autoconf, automake,
 libtool and a compatible compiler (GCC, Clang, etc.).
 
-CREATE
-------
+## CREATE
 
-Change directory to your project's root.
-Run `autoscan` (or `autoscan -v`).
+* Change directory to your project's root.
+* Create `Makefile.am` file.
+* Add the line `SUBDIR = src` to it - this is where your sources are located.
+* Crate `src/Makefile.am` file.
+* Add the following lines.
 
-You can use the `-v` option for to get more runtime information out of autoscan.
+    bin_PROGRAMS = example
+    example_SOURCES = main.cpp
 
-Autoscan will generate the initial configuration file. Think about it as a
-"wizzard" program that helps you guide through the first steps of setup.
+## SETUP
 
-See https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.70/html_node/autoscan-Invocation.html
+* Run `autoscan` (or `autoscan -v`).<br />
+    You can use the `-v` option for to get more runtime information out of autoscan.<br />
+    Autoscan will generate the initial configuration file. Think about it as a
+    "wizzard" program that helps you guide through the first steps of setup.<br /><br />
+    See [GNU Autoconf: Autoscan Invocation](https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.70/html_node/autoscan-Invocation.html)
 
-SETUP
------
+* Rename `configure.scan` to `configure.ac`.
+* Edit the `configure.ac`.
+    * Setup `AC_INIT` arguments.
+    * Add `AM_INIT_AUTOMAKE` after the `AC_INIT` (and `AC_CONFIG_*`) directive(s).
 
-Rename `configure.scan` to `configure.ac`.
-Edit the `configure.ac`.
-Add `AM_INIT_AUTOMAKE` after the `AC_INIT` (and `AC_CONFIG_*`) directive.
-Create a `Makefile.am` file (use the template provided in this repo).
-
-This is the part where you have to setup important program configurations.
-
-INSTALL
--------
+## INSTALL
 
 Run `autoreconf --force --install` (or `autoreconf -fi`).
 
@@ -42,4 +41,4 @@ You can use the `-v` option for to get more runtime information out of
 autoreconf. You should get used to executing `autoreconf -vfi` often in the early
 setup stages - especially when m4 macros are changed (more on that later).
 
-See https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.70/html_node/autoreconf-Invocation.html
+See [GNU Autoconf: Autoreconf Invocation](https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.70/html_node/autoreconf-Invocation.html)
