@@ -44,10 +44,12 @@ libtool and a compatible compiler (GCC, Clang, etc.).
     * Create empty files via `touch NEWS README AUTHORS ChangeLog`.
 * Repeate previous `autoreconf` command (with the above arguments).
 
-## MAKE
+## BUILD
 
+* Create build directory `build` and change to it (`cd build`).
+* Run `../configure`.
 * Run `make`.
 
 ## TEST
 
-* Execute `src/example`.
+* Execute `./src/example`.
