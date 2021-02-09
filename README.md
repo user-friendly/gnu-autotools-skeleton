@@ -16,9 +16,10 @@ libtool and a compatible compiler (GCC, Clang, etc.).
 * Add the line `SUBDIR = src` to it - this is where your sources are located.
 * Crate `src/Makefile.am` file.
 * Add the following lines.
-
+<code>
     bin_PROGRAMS = example
     example_SOURCES = main.cpp
+</code>
 
 ## SETUP
 
