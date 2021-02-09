@@ -28,6 +28,8 @@ SETUP
 
 Rename `configure.scan` to `configure.ac`.
 Edit the `configure.ac`.
+Add `AM_INIT_AUTOMAKE` after the `AC_INIT` (and `AC_CONFIG_*`) directive.
+Create a `Makefile.am` file (use the template provided in this repo).
 
 This is the part where you have to setup important program configurations.
 
