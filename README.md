@@ -43,4 +43,11 @@ libtool and a compatible compiler (GCC, Clang, etc.).
 * Get an error for missing description files.
     * Create empty files via `touch NEWS README AUTHORS ChangeLog`.
 * Repeate previous `autoreconf` command (with the above arguments).
-    
+
+## MAKE
+
+* Run `make`.
+
+## TEST
+
+* Execute `src/example`.
