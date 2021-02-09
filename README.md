@@ -31,7 +31,7 @@ libtool and a compatible compiler (GCC, Clang, etc.).
 * Rename `configure.scan` to `configure.ac`.
 * Edit the `configure.ac`.
     * Setup `AC_INIT` arguments.
-    * Add `AM_INIT_AUTOMAKE` after the `AC_INIT` (and `AC_CONFIG_*`) directive(s).
+    * Add `AM_INIT_AUTOMAKE` after the `AC_INIT` directive.
 
 ## INSTALL
 

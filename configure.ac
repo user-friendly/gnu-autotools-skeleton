@@ -3,11 +3,11 @@
 
 AC_PREREQ([2.69])
 AC_INIT([GNU Tools Noob Guide], [1.0.0], [maintainer@example.com])
+AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([config.h])
 
-# Initialize Automake.
-AM_INIT_AUTOMAKE
+
 
 # Checks for programs.
 AC_PROG_CXX
