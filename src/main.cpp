@@ -12,6 +12,6 @@
  * @see https://en.cppreference.com/w/cpp/language/main_function
  */
 int main (int argc, char *argv[]) {
-	std::cout << "GNU Auto Tools project guide: newbie boost!" << std::endl;
+	std::cout << "This GNU Autotools skeleton project works!" << std::endl;
 	return EXIT_SUCCESS;
 }

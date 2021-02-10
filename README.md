@@ -1,6 +1,6 @@
 # ABOUT
 
-A guide for absolute newbies to the GNU auto tools project setup.
+A GNU Autotools sekeleton project & quick setup guide.
 
 # QUICK START
 
