@@ -51,4 +51,4 @@ example_SOURCES = src/main.cpp
 
 ## TEST
 
-* Execute `./src/example`.
+* Execute `./example`.
