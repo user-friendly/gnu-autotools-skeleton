@@ -1,1 +1,2 @@
-SUBDIRS = src
+bin_PROGRAMS = example
+example_SOURCES = src/main.cpp
