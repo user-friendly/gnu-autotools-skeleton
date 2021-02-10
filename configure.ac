@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.69])
 AC_INIT([GNU Tools Noob Guide], [1.0.0], [maintainer@example.com])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([subdir-objects])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([config.h])
 

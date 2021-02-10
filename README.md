@@ -13,12 +13,10 @@ libtool and a compatible compiler (GCC, Clang, etc.).
 
 * Change directory to your project's root.
 * Create `Makefile.am` file.
-* Add the line `SUBDIR = src` to it - this is where your sources are located.
-* Crate `src/Makefile.am` file.
 * Add the following lines:
 ```
 bin_PROGRAMS = example
-example_SOURCES = main.cpp
+example_SOURCES = src/main.cpp
 ```
 
 ## SETUP
@@ -32,7 +30,7 @@ example_SOURCES = main.cpp
 * Rename `configure.scan` to `configure.ac`.
 * Edit the `configure.ac`.
     * Setup `AC_INIT` arguments.
-    * Add `AM_INIT_AUTOMAKE` after the `AC_INIT` directive.
+    * Add `AM_INIT_AUTOMAKE([subdir-objects])` after the `AC_INIT` directive.
 
 ## INSTALL
 
